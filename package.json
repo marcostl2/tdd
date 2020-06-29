@@ -1,0 +1,25 @@
+{
+  "name": "tdd",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/marcostl2/tdd.git",
+  "author": "Marcos Vinicius <52974636+marcostl2@users.noreply.github.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js --ignore __tests__",
+    "test": "SET NODE_ENV=test && jest --detectOpenHandles"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.4",
+    "pg": "^8.2.1",
+    "sequelize": "^6.2.3"
+  },
+  "devDependencies": {
+    "jest": "^26.1.0",
+    "sequelize-cli": "^6.1.0",
+    "sqlite3": "^4.2.0"
+  }
+}
